@@ -18,7 +18,7 @@ export class OpportunitiesController {
 
   @Patch(':id/follow')
   async follow(@Param('id') id: number, @Query('value') value: string) {
-    const isFollowed = value === 'true';
-    return this.service.markFollowed(id, isFollowed);
+    const isFollowed = value === 'true'
+    return this.service.markFollowed(id, isFollowed)
   }
 }
